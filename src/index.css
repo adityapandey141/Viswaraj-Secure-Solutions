@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-gray-800 bg-white antialiased;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold 
+           hover:bg-primary-600 transition-all duration-300 uppercase tracking-wider text-sm;
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-dark text-white font-semibold 
+           hover:bg-dark-200 transition-all duration-300 uppercase tracking-wider text-sm;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary font-semibold 
+           hover:bg-primary hover:text-white transition-all duration-300 uppercase tracking-wider text-sm;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold 
+           hover:bg-white hover:text-dark transition-all duration-300 uppercase tracking-wider text-sm;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .section-label {
+    @apply text-primary font-semibold text-sm uppercase tracking-widest mb-4;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold leading-tight;
+  }
+
+  .section-title-light {
+    @apply text-4xl md:text-5xl font-bold text-white leading-tight;
+  }
+}
