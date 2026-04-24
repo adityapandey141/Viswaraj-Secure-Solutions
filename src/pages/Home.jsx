@@ -68,7 +68,7 @@ const Home = () => {
                 <svg viewBox="0 0 400 500" className="w-full h-full">
                   <polygon
                     points="200,0 400,100 400,400 200,500 0,400 0,100"
-                    fill="#fcd34d"
+                    fill="#ff2d2d"
                   />
                 </svg>
               </div>
@@ -309,6 +309,27 @@ const Home = () => {
                 <div className="text-gray-500">CEO, TechCorp</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Clients Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <span className="section-label">Trusted By</span>
+            <h2 className="section-title text-dark">Our Esteemed Clients</h2>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            {companyInfo.clients.map((client, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 hover:bg-primary hover:text-white p-4 text-center text-sm font-medium text-gray-700 transition-all duration-300 flex items-center justify-center min-h-[80px]"
+              >
+                {client}
+              </div>
+            ))}
           </div>
         </div>
       </section>
