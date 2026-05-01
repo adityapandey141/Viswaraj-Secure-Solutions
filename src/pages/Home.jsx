@@ -193,7 +193,7 @@ const Home = () => {
                 "Professional & Trained Workforce",
                 "Technology-Driven Solutions",
                 "Customized Service Packages",
-                "24/7 Support Available",
+                "24*7 Support Available",
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
