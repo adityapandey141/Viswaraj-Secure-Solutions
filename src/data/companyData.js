@@ -5,7 +5,7 @@ export const companyInfo = {
 
   contact: {
     phone: "+91 9937325509",
-    email: "info@viswarajsecure.com",
+    email: "info@viswarajsecuresolutions.in",
     address:
       "Plot No-915, Palasuni New Colony, Lane-2, Palasuni, Bhubaneswar-751010",
     whatsapp: "919937325509",
